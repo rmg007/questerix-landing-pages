@@ -1,0 +1,17 @@
+name = "questerix-landing-pages"
+compatibility_date = "2026-02-22"
+
+[env.production]
+name = "questerix-landing-pages"
+
+# Build config for Cloudflare Pages
+# Build command: npm run build
+# Output directory: dist
+# Root directory: /
+# Node.js version: 18
+
+# Domain: questerix.com (connect when ready to publish)
+# Preview: auto-generated .pages.dev URL for branch previews
+
+# Secrets (set via Cloudflare Dashboard or wrangler secret put):
+# None required — this is a static marketing site with no backend calls.
