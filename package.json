@@ -5,12 +5,18 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "blog:generate": "node scripts/blog-generate.mjs",
+    "build": "node scripts/guard-cloudflare-deploy.mjs && node scripts/enforce-tokens.mjs && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",

@@ -18,6 +18,43 @@ npm run build      # Output: dist/
 npm run preview    # Preview the production build
 ```
 
+## Blog
+
+- Routes:
+  - `/blog` — blog index
+  - `/blog/:slug` — article page
+- Articles live in `src/articles/*.md`.
+- Images must be WebP and live in `public/assets/generated/` (referenced from Markdown as `/assets/generated/...`).
+
+### Article Format
+
+Each article is a single Markdown file with frontmatter:
+
+```md
+---
+title: "Your title"
+description: "Meta description"
+date: "2026-02-23"
+slug: "your-slug"
+tags: ["Tag A", "Tag B"]
+author: "Questerix Team"
+coverImage: "/assets/generated/your-slug-hero.webp"
+draft: false
+---
+
+# Your title
+```
+
+### Generate a New Post (Scaffold)
+
+Run:
+
+```bash
+npm run blog:generate
+```
+
+This creates a new file in `src/articles/` with frontmatter and optional image placeholders.
+
 ## Structure
 
 ```
