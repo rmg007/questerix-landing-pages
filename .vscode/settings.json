@@ -1,0 +1,21 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "dist": true,
+    "public/assets/generated": true,
+    "**/*.min.js": true,
+    "**/*.min.css": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "dist/**": true
+  }
+}

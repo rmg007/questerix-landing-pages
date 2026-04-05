@@ -1,13 +1,34 @@
-# .antigravityignore - Focus Control
+# .antigravityignore - Focus Control + Token Savings
 # UNCOMMENT a line to IGNORE that project.
 # COMMENT OUT a line to make it VISIBLE to the AI.
 
-# --- Current Focus: questerix-student-app ---
+# --- Current Focus: questerix-landing-pages ---
 
-# SELF (This project)
-.
+# SELF (This project) — comment out to IGNORE self
+# .
 
 # SIBLINGS
 ../Questerix/
 # ../questerix-student-app/
 ../questerix-help-docs/
+
+# -- Token-saving patterns ----------------------------------------------------
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+**/dist/
+**/build/
+**/.cache/
+**/*.log
+**/*.tmp
+**/.env
+**/.env.*
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.ico
+**/*.min.js
+**/*.min.css
+**/public/assets/generated/
